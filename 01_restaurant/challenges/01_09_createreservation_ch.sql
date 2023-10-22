@@ -13,4 +13,6 @@ VALUES('Sam','McAdams','smac@kinetecoinc.com','2929 Cay Roay','Corby','Northans'
 
 INSERT INTO Reservations
 (CustomerID, Date, PartySize)
-VALUES((SELECT CustomerID FROM Customers WHERE Email = 'smac@kinetecoinc.com'),5);
+VALUES((SELECT CustomerID FROM Customers WHERE Email = 'smac@kinetecoinc.com'),'2022-08-12 18:00:00',5);
+
+SELECT * FROM Reservations WHERE CustomerID = 101;

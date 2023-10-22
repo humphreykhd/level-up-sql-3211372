@@ -12,7 +12,7 @@ SELECT * FROM Reservations WHERE CustomerID IN(14,91,99) AND PartySize = 4;
 
 -- OR just join the tables
 
-SELECT r.CustomerID,FirstName, LastName, Email,ReservationID,Date PartySize 
+SELECT r.CustomerID,FirstName, LastName, Email,ReservationID,Date, PartySize 
 FROM Customers c  
 INNER JOIN Reservations r 
 ON c.CustomerID = r.CustomerID

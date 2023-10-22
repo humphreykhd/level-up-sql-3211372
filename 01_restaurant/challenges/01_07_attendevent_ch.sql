@@ -4,7 +4,7 @@
 -- attendance, and will bring 3 friends.
 
 SELECT * FROM Customers WHERE Email = 'atapley2j@kinetecoinc.com';
-DROP TABLE AnniversaryAttendees; 
+
 CREATE TABLE AnniversaryAttendees
 (CustomerID integer,
 PartySize integer)
